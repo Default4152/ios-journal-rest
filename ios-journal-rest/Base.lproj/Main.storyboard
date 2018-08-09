@@ -83,7 +83,7 @@
         <!--New Journal Entry-->
         <scene sceneID="Eud-vV-Tld">
             <objects>
-                <viewController id="9J0-hx-gCX" sceneMemberID="viewController">
+                <viewController id="9J0-hx-gCX" customClass="EntryDetailViewController" customModule="ios_journal_rest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dj9-Up-3l7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,8 +116,16 @@
                         <viewLayoutGuide key="safeArea" id="h7T-X1-9oo"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Journal Entry" id="wXM-Zy-ZeF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3Fk-bj-nvi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3Fk-bj-nvi">
+                            <connections>
+                                <action selector="saveJournalEntry:" destination="9J0-hx-gCX" id="5af-wN-CN0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="8LQ-EI-OyX" id="6aL-6k-jek"/>
+                        <outlet property="textView" destination="2A4-bi-k3v" id="iVE-Xe-UgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yt-qC-30l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

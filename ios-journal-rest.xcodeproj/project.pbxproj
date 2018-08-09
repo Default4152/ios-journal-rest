@@ -13,6 +13,7 @@
 		13896BFF211CA71300800877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13896BFD211CA71300800877 /* LaunchScreen.storyboard */; };
 		13896C0A211CAE5400800877 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13896C09211CAE5400800877 /* EntriesTableViewController.swift */; };
 		13896C0C211CB22900800877 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13896C0B211CB22900800877 /* EntryTableViewCell.swift */; };
+		13896C0F211CB5B800800877 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13896C0E211CB5B800800877 /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		13896C00211CA71300800877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13896C09211CAE5400800877 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		13896C0B211CB22900800877 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		13896C0E211CB5B800800877 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				13896C09211CAE5400800877 /* EntriesTableViewController.swift */,
+				13896C0E211CB5B800800877 /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				13896C0C211CB22900800877 /* EntryTableViewCell.swift in Sources */,
 				13896C0A211CAE5400800877 /* EntriesTableViewController.swift in Sources */,
+				13896C0F211CB5B800800877 /* EntryDetailViewController.swift in Sources */,
 				13896BF5211CA71200800877 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
