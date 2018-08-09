@@ -80,20 +80,48 @@
             </objects>
             <point key="canvasLocation" x="772" y="141.67916041979012"/>
         </scene>
-        <!--View Controller-->
+        <!--New Journal Entry-->
         <scene sceneID="Eud-vV-Tld">
             <objects>
                 <viewController id="9J0-hx-gCX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dj9-Up-3l7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-EI-OyX">
+                                <rect key="frame" x="16" y="141" width="343" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-bi-k3v">
+                                <rect key="frame" x="16" y="179" width="343" height="463"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8LQ-EI-OyX" firstAttribute="top" secondItem="h7T-X1-9oo" secondAttribute="top" constant="25" id="HY2-4t-leF"/>
+                            <constraint firstItem="h7T-X1-9oo" firstAttribute="bottom" secondItem="2A4-bi-k3v" secondAttribute="bottom" constant="25" id="Ouf-uF-hzf"/>
+                            <constraint firstItem="2A4-bi-k3v" firstAttribute="top" secondItem="8LQ-EI-OyX" secondAttribute="bottom" constant="8" id="PsG-yq-MWm"/>
+                            <constraint firstItem="h7T-X1-9oo" firstAttribute="trailing" secondItem="2A4-bi-k3v" secondAttribute="trailing" constant="16" id="V5b-hX-a4X"/>
+                            <constraint firstItem="h7T-X1-9oo" firstAttribute="trailing" secondItem="8LQ-EI-OyX" secondAttribute="trailing" constant="16" id="Y4e-AG-pva"/>
+                            <constraint firstItem="8LQ-EI-OyX" firstAttribute="leading" secondItem="h7T-X1-9oo" secondAttribute="leading" constant="16" id="iEQ-oM-Rck"/>
+                            <constraint firstItem="2A4-bi-k3v" firstAttribute="leading" secondItem="h7T-X1-9oo" secondAttribute="leading" constant="16" id="laK-ne-ZkU"/>
+                            <constraint firstItem="8LQ-EI-OyX" firstAttribute="centerX" secondItem="h7T-X1-9oo" secondAttribute="centerX" id="r00-YY-dIJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h7T-X1-9oo"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Journal Entry" id="wXM-Zy-ZeF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3Fk-bj-nvi"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yt-qC-30l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="139"/>
+            <point key="canvasLocation" x="1551.2" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="afC-Gm-TgU">
