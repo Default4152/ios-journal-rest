@@ -10,11 +10,11 @@ import Foundation
 
 struct Entry: Equatable, Codable {
 
-    init(title: String, bodyText: String, timestamp: Date, identifier: String) {
+    init(title: String, bodyText: String, timestamp: Date = Date(), identifier: String = UUID().uuidString) {
         self.title = title
         self.bodyText = bodyText
-        self.timestamp = Date()
-        self.identifier = UUID().uuidString
+        self.timestamp = timestamp
+        self.identifier = identifier
     }
 
     var title: String

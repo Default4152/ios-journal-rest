@@ -10,6 +10,11 @@ import Foundation
 
 class EntryController {
     
+    func createEntry(title: String, bodyText: String) {
+        entries.append(Entry(title: title, bodyText: bodyText))
+    }
+    
+    
     func put(entry: Entry, completion: @escaping (Error?) -> Void) {
         let url = baseURL
             .appendingPathComponent(entry.identifier)
