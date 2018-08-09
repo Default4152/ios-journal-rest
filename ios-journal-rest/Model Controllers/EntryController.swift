@@ -10,8 +10,13 @@ import Foundation
 
 class EntryController {
     
-    func createEntry(title: String, bodyText: String) {
-        entries.append(Entry(title: title, bodyText: bodyText))
+    func createEntry(title: String, bodyText: String, completion: @escaping (Error?) -> Void) {
+        let entry = Entry(title: title, bodyText: bodyText)
+        put(entry: entry) { (error) in
+            if let error = error {
+                NSLog("Error PUTting entry: \(error)")
+            }
+        }
     }
     
     
