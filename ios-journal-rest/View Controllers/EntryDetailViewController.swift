@@ -33,7 +33,7 @@ class EntryDetailViewController: UIViewController {
                 if let error = error {
                     NSLog("Error saving updated journal entry: \(error)")
                 }
-
+                
                 DispatchQueue.main.async {
                     self.navigationController?.popViewController(animated: true)
                 }
@@ -43,11 +43,11 @@ class EntryDetailViewController: UIViewController {
                 if let error = error {
                     NSLog("Error creating new journal entry: \(error)")
                 }
+                
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
             })
-
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
-            }
         }
     }
 

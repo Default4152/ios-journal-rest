@@ -37,14 +37,24 @@ class EntriesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let entry = entryController.entries[indexPath.row]
         if editingStyle == .delete {
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            entryController.deleteEntry(entry: entry) { (error) in
+                if let error = error {
+                    NSLog("Error deleting entry from tableView: \(error)")
+                }
+            }
+            
+            DispatchQueue.main.async {
+                self.entryController.entries.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.tableView.reloadData()
+            }
         }
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // ViewExistingJournalEntrySegue && CreateJournalEntrySegue
         if segue.identifier == "ViewExistingJournalEntrySegue" {
             if let vc = segue.destination as? EntryDetailViewController {
                 vc.entryController = entryController
