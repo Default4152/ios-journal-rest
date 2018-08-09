@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135E1B4B211CB87600E5DE54 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E1B4A211CB87600E5DE54 /* Entry.swift */; };
 		13896BF5211CA71200800877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13896BF4211CA71200800877 /* AppDelegate.swift */; };
 		13896BFA211CA71200800877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13896BF8211CA71200800877 /* Main.storyboard */; };
 		13896BFC211CA71300800877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13896BFB211CA71300800877 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135E1B4A211CB87600E5DE54 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		13896BF1211CA71200800877 /* ios-journal-rest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-journal-rest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13896BF4211CA71200800877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13896BF9211CA71200800877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		13896C08211CADC200800877 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				135E1B4A211CB87600E5DE54 /* Entry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135E1B4B211CB87600E5DE54 /* Entry.swift in Sources */,
 				13896C0C211CB22900800877 /* EntryTableViewCell.swift in Sources */,
 				13896C0A211CAE5400800877 /* EntriesTableViewController.swift in Sources */,
 				13896C0F211CB5B800800877 /* EntryDetailViewController.swift in Sources */,
