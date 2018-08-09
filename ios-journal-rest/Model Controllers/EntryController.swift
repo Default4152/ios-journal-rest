@@ -46,6 +46,8 @@ class EntryController {
                 NSLog("Error updating entry: \(error)")
             }
         }
+        
+        completion(nil)
     }
     
     func createEntry(title: String, bodyText: String, completion: @escaping (Error?) -> Void) {
@@ -55,6 +57,7 @@ class EntryController {
                 NSLog("Error PUT entry: \(error)")
             }
         }
+        completion(nil)
     }
     
     
