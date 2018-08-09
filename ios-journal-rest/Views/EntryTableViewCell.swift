@@ -16,7 +16,9 @@ class EntryTableViewCell: UITableViewCell {
             let descriptionLabel = descriptionLabel else { return }
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm"
+        dateFormatter.dateFormat = "hh:mm a 'on' MM-dd-yyyy"
+        dateFormatter.amSymbol = "AM"
+        dateFormatter.pmSymbol = "PM"
         
         if let entry = entry {
             titleLabel.text = entry.title

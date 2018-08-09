@@ -26,33 +26,47 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creative Title Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9b-Az-FkK">
-                                            <rect key="frame" x="18" y="11" width="175" height="24"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where I would tell some story that is really cool. This is where I would tell some story that is really cool. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-uZ-lZR">
-                                            <rect key="frame" x="18" y="43" width="343" height="41"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/09/2018 8:48AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auY-RG-z8n">
-                                            <rect key="frame" x="244" y="16" width="115" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-F8-TtE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creative Title Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9b-Az-FkK">
+                                                    <rect key="frame" x="20" y="10" width="175" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where I would tell some story that is really cool. This is where I would tell some story that is really cool. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-uZ-lZR">
+                                                    <rect key="frame" x="20" y="49" width="335" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/09/2018 8:48AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auY-RG-z8n">
+                                                    <rect key="frame" x="223" y="14" width="132" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="rtj-uZ-lZR" firstAttribute="top" secondItem="h9b-Az-FkK" secondAttribute="bottom" constant="15" id="3Ap-Yj-v1U"/>
+                                                <constraint firstAttribute="bottom" secondItem="rtj-uZ-lZR" secondAttribute="bottom" constant="8.5" id="MGs-EX-HMN"/>
+                                                <constraint firstItem="auY-RG-z8n" firstAttribute="top" secondItem="yJY-F8-TtE" secondAttribute="top" constant="14" id="Zbb-6l-gLM"/>
+                                                <constraint firstItem="h9b-Az-FkK" firstAttribute="leading" secondItem="yJY-F8-TtE" secondAttribute="leading" constant="20" id="d6o-S6-S4h"/>
+                                                <constraint firstItem="rtj-uZ-lZR" firstAttribute="centerX" secondItem="yJY-F8-TtE" secondAttribute="centerX" id="gLu-5k-aLn"/>
+                                                <constraint firstItem="rtj-uZ-lZR" firstAttribute="leading" secondItem="yJY-F8-TtE" secondAttribute="leading" constant="20" id="h0y-IO-93U"/>
+                                                <constraint firstAttribute="trailing" secondItem="rtj-uZ-lZR" secondAttribute="trailing" constant="20" id="pdd-bN-xJy"/>
+                                                <constraint firstItem="h9b-Az-FkK" firstAttribute="top" secondItem="yJY-F8-TtE" secondAttribute="top" constant="10" id="t1j-5b-00J"/>
+                                                <constraint firstAttribute="trailing" secondItem="auY-RG-z8n" secondAttribute="trailing" constant="20" id="ve5-hF-SyI"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="rtj-uZ-lZR" firstAttribute="top" secondItem="auY-RG-z8n" secondAttribute="bottom" constant="12" id="ATO-wW-ahy"/>
-                                        <constraint firstItem="auY-RG-z8n" firstAttribute="leading" secondItem="h9b-Az-FkK" secondAttribute="trailing" constant="51" id="Av1-ej-rVu"/>
-                                        <constraint firstItem="rtj-uZ-lZR" firstAttribute="trailing" secondItem="jh1-oj-M0z" secondAttribute="trailingMargin" constant="2" id="Hqz-17-Rwg"/>
-                                        <constraint firstItem="rtj-uZ-lZR" firstAttribute="leading" secondItem="jh1-oj-M0z" secondAttribute="leadingMargin" constant="2" id="Hwr-jq-N1x"/>
-                                        <constraint firstItem="rtj-uZ-lZR" firstAttribute="top" secondItem="h9b-Az-FkK" secondAttribute="bottom" constant="8" id="OkQ-3k-0Ud"/>
-                                        <constraint firstItem="h9b-Az-FkK" firstAttribute="top" secondItem="jh1-oj-M0z" secondAttribute="top" constant="11" id="psY-Ow-ehO"/>
-                                        <constraint firstItem="h9b-Az-FkK" firstAttribute="leading" secondItem="jh1-oj-M0z" secondAttribute="leading" constant="18" id="rhR-py-HYL"/>
+                                        <constraint firstItem="yJY-F8-TtE" firstAttribute="leading" secondItem="jh1-oj-M0z" secondAttribute="leading" id="0kn-8y-MKO"/>
+                                        <constraint firstAttribute="trailing" secondItem="yJY-F8-TtE" secondAttribute="trailing" id="9xt-O0-jH5"/>
+                                        <constraint firstAttribute="bottom" secondItem="yJY-F8-TtE" secondAttribute="bottom" id="K59-SB-dBf"/>
+                                        <constraint firstItem="yJY-F8-TtE" firstAttribute="top" secondItem="jh1-oj-M0z" secondAttribute="top" id="MdT-W3-FLC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -118,7 +132,7 @@
                     <navigationItem key="navigationItem" title="New Journal Entry" id="wXM-Zy-ZeF">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3Fk-bj-nvi">
                             <connections>
-                                <action selector="saveJournalEntry:" destination="9J0-hx-gCX" id="5af-wN-CN0"/>
+                                <action selector="save:" destination="9J0-hx-gCX" id="dAp-X6-UnR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -151,6 +165,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VgV-hW-amZ"/>
+        <segue reference="gFI-nY-qdY"/>
     </inferredMetricsTieBreakers>
 </document>

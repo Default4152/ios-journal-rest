@@ -17,9 +17,8 @@ struct Entry: Equatable, Codable {
         self.identifier = identifier
     }
 
-    var title: String
-    var bodyText: String
+    var title: String?
+    var bodyText: String?
     let timestamp: Date
     let identifier: String
-
 }

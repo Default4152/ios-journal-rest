@@ -25,14 +25,15 @@ class EntryController {
             if let data = data {
                 do {
                     let decoder = JSONDecoder()
-                    let entries = try decoder.decode([Entry].self, from: data)
+                    let entries = try decoder.decode([String: Entry].self, from: data).values
                     let sortedEntries = entries.sorted(by: { $0.timestamp <= $1.timestamp })
                     self.entries = sortedEntries
-                } catch {
-                    NSLog("Error decoding data from GET")
+                    completion(nil)
+                } catch let error {
+                    NSLog("Error decoding data from GET: \(error)")
                 }
             }
-        }
+        }.resume()
     }
     
     func update(entry: Entry, title: String, bodyText: String, completion: @escaping (Error?) -> Void) {
